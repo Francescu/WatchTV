@@ -13,6 +13,33 @@
 		096EA0C31AF3B3F8008A06F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0C21AF3B3F8008A06F4 /* Images.xcassets */; };
 		096EA0C61AF3B3F8008A06F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0C41AF3B3F8008A06F4 /* LaunchScreen.xib */; };
 		096EA0D21AF3B3F8008A06F4 /* TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA0D11AF3B3F8008A06F4 /* TVTests.swift */; };
+		096EA0E41AF3B43F008A06F4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA0E31AF3B43F008A06F4 /* InterfaceController.swift */; };
+		096EA0E61AF3B43F008A06F4 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA0E51AF3B43F008A06F4 /* GlanceController.swift */; };
+		096EA0E81AF3B43F008A06F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0E71AF3B43F008A06F4 /* Images.xcassets */; };
+		096EA0EC1AF3B43F008A06F4 /* TV WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0EB1AF3B43F008A06F4 /* TV WatchKit App.app */; };
+		096EA0F41AF3B43F008A06F4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0F21AF3B43F008A06F4 /* Interface.storyboard */; };
+		096EA0F61AF3B43F008A06F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0F51AF3B43F008A06F4 /* Images.xcassets */; };
+		096EA0F91AF3B43F008A06F4 /* TV WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 096EA0DF1AF3B43F008A06F4 /* TV WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		098C0C9A1AF3C07600DB4D5B /* TVProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C991AF3C07600DB4D5B /* TVProgram.swift */; };
+		098C0C9B1AF3C0B000DB4D5B /* TVProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C991AF3C07600DB4D5B /* TVProgram.swift */; };
+		098C0C9D1AF3C1A600DB4D5B /* TVProgramRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C9C1AF3C1A600DB4D5B /* TVProgramRow.swift */; };
+		09EBF39E1AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
+		09EBF39F1AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
+		09EBF3A01AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
+		09EBF3A21AF3D3460048E99B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A11AF3D3460048E99B /* JSONParser.swift */; };
+		09EBF3A31AF3D3460048E99B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A11AF3D3460048E99B /* JSONParser.swift */; };
+		09EBF3AE1AF3D7CC0048E99B /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A81AF3D7CC0048E99B /* Duration.swift */; };
+		09EBF3AF1AF3D7CC0048E99B /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A81AF3D7CC0048E99B /* Duration.swift */; };
+		09EBF3B01AF3D7CC0048E99B /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A91AF3D7CC0048E99B /* Int+Timepiece.swift */; };
+		09EBF3B11AF3D7CC0048E99B /* Int+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A91AF3D7CC0048E99B /* Int+Timepiece.swift */; };
+		09EBF3B21AF3D7CC0048E99B /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AA1AF3D7CC0048E99B /* NSCalendar+Timepiece.swift */; };
+		09EBF3B31AF3D7CC0048E99B /* NSCalendar+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AA1AF3D7CC0048E99B /* NSCalendar+Timepiece.swift */; };
+		09EBF3B41AF3D7CC0048E99B /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AB1AF3D7CC0048E99B /* NSDate+Timepiece.swift */; };
+		09EBF3B51AF3D7CC0048E99B /* NSDate+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AB1AF3D7CC0048E99B /* NSDate+Timepiece.swift */; };
+		09EBF3B61AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AC1AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift */; };
+		09EBF3B71AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AC1AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift */; };
+		09EBF3B81AF3D7CC0048E99B /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AD1AF3D7CC0048E99B /* String+Timepiece.swift */; };
+		09EBF3B91AF3D7CC0048E99B /* String+Timepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3AD1AF3D7CC0048E99B /* String+Timepiece.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +50,35 @@
 			remoteGlobalIDString = 096EA0B51AF3B3F8008A06F4;
 			remoteInfo = TV;
 		};
+		096EA0ED1AF3B43F008A06F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096EA0AE1AF3B3F8008A06F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096EA0EA1AF3B43F008A06F4;
+			remoteInfo = "TV WatchKit App";
+		};
+		096EA0F71AF3B43F008A06F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096EA0AE1AF3B3F8008A06F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096EA0DE1AF3B43F008A06F4;
+			remoteInfo = "TV WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		096EA1001AF3B43F008A06F4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				096EA0F91AF3B43F008A06F4 /* TV WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		096EA0B61AF3B3F8008A06F4 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +91,25 @@
 		096EA0CB1AF3B3F8008A06F4 /* TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096EA0D01AF3B3F8008A06F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096EA0D11AF3B3F8008A06F4 /* TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVTests.swift; sourceTree = "<group>"; };
+		096EA0DF1AF3B43F008A06F4 /* TV WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TV WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096EA0E21AF3B43F008A06F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096EA0E31AF3B43F008A06F4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		096EA0E51AF3B43F008A06F4 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		096EA0E71AF3B43F008A06F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		096EA0EB1AF3B43F008A06F4 /* TV WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		096EA0F11AF3B43F008A06F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096EA0F31AF3B43F008A06F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		096EA0F51AF3B43F008A06F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		098C0C991AF3C07600DB4D5B /* TVProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProgram.swift; sourceTree = "<group>"; };
+		098C0C9C1AF3C1A600DB4D5B /* TVProgramRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProgramRow.swift; sourceTree = "<group>"; };
+		09EBF39D1AF3D32B0048E99B /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
+		09EBF3A11AF3D3460048E99B /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = "TV WatchKit Extension/JSONParser.swift"; sourceTree = SOURCE_ROOT; };
+		09EBF3A81AF3D7CC0048E99B /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
+		09EBF3A91AF3D7CC0048E99B /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
+		09EBF3AA1AF3D7CC0048E99B /* NSCalendar+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSCalendar+Timepiece.swift"; sourceTree = "<group>"; };
+		09EBF3AB1AF3D7CC0048E99B /* NSDate+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Timepiece.swift"; sourceTree = "<group>"; };
+		09EBF3AC1AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDateComponents+Timepiece.swift"; sourceTree = "<group>"; };
+		09EBF3AD1AF3D7CC0048E99B /* String+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Timepiece.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +127,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		096EA0DC1AF3B43F008A06F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +142,8 @@
 			children = (
 				096EA0B81AF3B3F8008A06F4 /* TV */,
 				096EA0CE1AF3B3F8008A06F4 /* TVTests */,
+				096EA0E01AF3B43F008A06F4 /* TV WatchKit Extension */,
+				096EA0EF1AF3B43F008A06F4 /* TV WatchKit App */,
 				096EA0B71AF3B3F8008A06F4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +153,8 @@
 			children = (
 				096EA0B61AF3B3F8008A06F4 /* TV.app */,
 				096EA0CB1AF3B3F8008A06F4 /* TVTests.xctest */,
+				096EA0DF1AF3B43F008A06F4 /* TV WatchKit Extension.appex */,
+				096EA0EB1AF3B43F008A06F4 /* TV WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,7 +162,11 @@
 		096EA0B81AF3B3F8008A06F4 /* TV */ = {
 			isa = PBXGroup;
 			children = (
+				09EBF3A71AF3D7BA0048E99B /* Utils */,
+				09EBF39D1AF3D32B0048E99B /* sample.json */,
+				09EBF3A11AF3D3460048E99B /* JSONParser.swift */,
 				096EA0BB1AF3B3F8008A06F4 /* AppDelegate.swift */,
+				098C0C991AF3C07600DB4D5B /* TVProgram.swift */,
 				096EA0BD1AF3B3F8008A06F4 /* ViewController.swift */,
 				096EA0BF1AF3B3F8008A06F4 /* Main.storyboard */,
 				096EA0C21AF3B3F8008A06F4 /* Images.xcassets */,
@@ -112,6 +201,57 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		096EA0E01AF3B43F008A06F4 /* TV WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				098C0C9C1AF3C1A600DB4D5B /* TVProgramRow.swift */,
+				096EA0E31AF3B43F008A06F4 /* InterfaceController.swift */,
+				096EA0E51AF3B43F008A06F4 /* GlanceController.swift */,
+				096EA0E71AF3B43F008A06F4 /* Images.xcassets */,
+				096EA0E11AF3B43F008A06F4 /* Supporting Files */,
+			);
+			path = "TV WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		096EA0E11AF3B43F008A06F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096EA0E21AF3B43F008A06F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096EA0EF1AF3B43F008A06F4 /* TV WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				096EA0F21AF3B43F008A06F4 /* Interface.storyboard */,
+				096EA0F51AF3B43F008A06F4 /* Images.xcassets */,
+				096EA0F01AF3B43F008A06F4 /* Supporting Files */,
+			);
+			path = "TV WatchKit App";
+			sourceTree = "<group>";
+		};
+		096EA0F01AF3B43F008A06F4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096EA0F11AF3B43F008A06F4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09EBF3A71AF3D7BA0048E99B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09EBF3A81AF3D7CC0048E99B /* Duration.swift */,
+				09EBF3A91AF3D7CC0048E99B /* Int+Timepiece.swift */,
+				09EBF3AA1AF3D7CC0048E99B /* NSCalendar+Timepiece.swift */,
+				09EBF3AB1AF3D7CC0048E99B /* NSDate+Timepiece.swift */,
+				09EBF3AC1AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift */,
+				09EBF3AD1AF3D7CC0048E99B /* String+Timepiece.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +262,12 @@
 				096EA0B21AF3B3F8008A06F4 /* Sources */,
 				096EA0B31AF3B3F8008A06F4 /* Frameworks */,
 				096EA0B41AF3B3F8008A06F4 /* Resources */,
+				096EA1001AF3B43F008A06F4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				096EA0F81AF3B43F008A06F4 /* PBXTargetDependency */,
 			);
 			name = TV;
 			productName = TV;
@@ -150,6 +292,39 @@
 			productReference = 096EA0CB1AF3B3F8008A06F4 /* TVTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		096EA0DE1AF3B43F008A06F4 /* TV WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096EA0FD1AF3B43F008A06F4 /* Build configuration list for PBXNativeTarget "TV WatchKit Extension" */;
+			buildPhases = (
+				096EA0DB1AF3B43F008A06F4 /* Sources */,
+				096EA0DC1AF3B43F008A06F4 /* Frameworks */,
+				096EA0DD1AF3B43F008A06F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096EA0EE1AF3B43F008A06F4 /* PBXTargetDependency */,
+			);
+			name = "TV WatchKit Extension";
+			productName = "TV WatchKit Extension";
+			productReference = 096EA0DF1AF3B43F008A06F4 /* TV WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		096EA0EA1AF3B43F008A06F4 /* TV WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096EA0FA1AF3B43F008A06F4 /* Build configuration list for PBXNativeTarget "TV WatchKit App" */;
+			buildPhases = (
+				096EA0E91AF3B43F008A06F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TV WatchKit App";
+			productName = "TV WatchKit App";
+			productReference = 096EA0EB1AF3B43F008A06F4 /* TV WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +336,19 @@
 				TargetAttributes = {
 					096EA0B51AF3B3F8008A06F4 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HPW8Z33DD9;
 					};
 					096EA0CA1AF3B3F8008A06F4 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 096EA0B51AF3B3F8008A06F4;
+					};
+					096EA0DE1AF3B43F008A06F4 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HPW8Z33DD9;
+					};
+					096EA0EA1AF3B43F008A06F4 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = HPW8Z33DD9;
 					};
 				};
 			};
@@ -183,6 +367,8 @@
 			targets = (
 				096EA0B51AF3B3F8008A06F4 /* TV */,
 				096EA0CA1AF3B3F8008A06F4 /* TVTests */,
+				096EA0DE1AF3B43F008A06F4 /* TV WatchKit Extension */,
+				096EA0EA1AF3B43F008A06F4 /* TV WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096EA0C11AF3B3F8008A06F4 /* Main.storyboard in Resources */,
+				09EBF39E1AF3D32B0048E99B /* sample.json in Resources */,
 				096EA0C61AF3B3F8008A06F4 /* LaunchScreen.xib in Resources */,
 				096EA0C31AF3B3F8008A06F4 /* Images.xcassets in Resources */,
 			);
@@ -205,6 +392,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		096EA0DD1AF3B43F008A06F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096EA0EC1AF3B43F008A06F4 /* TV WatchKit App.app in Resources */,
+				096EA0E81AF3B43F008A06F4 /* Images.xcassets in Resources */,
+				09EBF39F1AF3D32B0048E99B /* sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096EA0E91AF3B43F008A06F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096EA0F41AF3B43F008A06F4 /* Interface.storyboard in Resources */,
+				096EA0F61AF3B43F008A06F4 /* Images.xcassets in Resources */,
+				09EBF3A01AF3D32B0048E99B /* sample.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -212,8 +419,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09EBF3B81AF3D7CC0048E99B /* String+Timepiece.swift in Sources */,
+				09EBF3B41AF3D7CC0048E99B /* NSDate+Timepiece.swift in Sources */,
+				09EBF3AE1AF3D7CC0048E99B /* Duration.swift in Sources */,
 				096EA0BE1AF3B3F8008A06F4 /* ViewController.swift in Sources */,
+				098C0C9A1AF3C07600DB4D5B /* TVProgram.swift in Sources */,
+				09EBF3A21AF3D3460048E99B /* JSONParser.swift in Sources */,
+				09EBF3B21AF3D7CC0048E99B /* NSCalendar+Timepiece.swift in Sources */,
 				096EA0BC1AF3B3F8008A06F4 /* AppDelegate.swift in Sources */,
+				09EBF3B61AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift in Sources */,
+				09EBF3B01AF3D7CC0048E99B /* Int+Timepiece.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +440,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		096EA0DB1AF3B43F008A06F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09EBF3B31AF3D7CC0048E99B /* NSCalendar+Timepiece.swift in Sources */,
+				09EBF3B11AF3D7CC0048E99B /* Int+Timepiece.swift in Sources */,
+				09EBF3B51AF3D7CC0048E99B /* NSDate+Timepiece.swift in Sources */,
+				096EA0E41AF3B43F008A06F4 /* InterfaceController.swift in Sources */,
+				09EBF3A31AF3D3460048E99B /* JSONParser.swift in Sources */,
+				098C0C9B1AF3C0B000DB4D5B /* TVProgram.swift in Sources */,
+				09EBF3B71AF3D7CC0048E99B /* NSDateComponents+Timepiece.swift in Sources */,
+				09EBF3AF1AF3D7CC0048E99B /* Duration.swift in Sources */,
+				09EBF3B91AF3D7CC0048E99B /* String+Timepiece.swift in Sources */,
+				096EA0E61AF3B43F008A06F4 /* GlanceController.swift in Sources */,
+				098C0C9D1AF3C1A600DB4D5B /* TVProgramRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +465,16 @@
 			isa = PBXTargetDependency;
 			target = 096EA0B51AF3B3F8008A06F4 /* TV */;
 			targetProxy = 096EA0CC1AF3B3F8008A06F4 /* PBXContainerItemProxy */;
+		};
+		096EA0EE1AF3B43F008A06F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096EA0EA1AF3B43F008A06F4 /* TV WatchKit App */;
+			targetProxy = 096EA0ED1AF3B43F008A06F4 /* PBXContainerItemProxy */;
+		};
+		096EA0F81AF3B43F008A06F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096EA0DE1AF3B43F008A06F4 /* TV WatchKit Extension */;
+			targetProxy = 096EA0F71AF3B43F008A06F4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +493,14 @@
 				096EA0C51AF3B3F8008A06F4 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		096EA0F21AF3B43F008A06F4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096EA0F31AF3B43F008A06F4 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +591,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +606,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +651,78 @@
 			};
 			name = Release;
 		};
+		096EA0FB1AF3B43F008A06F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = TV_WatchKit_Extension;
+				INFOPLIST_FILE = "TV WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		096EA0FC1AF3B43F008A06F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = TV_WatchKit_Extension;
+				INFOPLIST_FILE = "TV WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		096EA0FE1AF3B43F008A06F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		096EA0FF1AF3B43F008A06F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "TV WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +742,7 @@
 				096EA0D71AF3B3F8008A06F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		096EA0D81AF3B3F8008A06F4 /* Build configuration list for PBXNativeTarget "TVTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +751,25 @@
 				096EA0DA1AF3B3F8008A06F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096EA0FA1AF3B43F008A06F4 /* Build configuration list for PBXNativeTarget "TV WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096EA0FB1AF3B43F008A06F4 /* Debug */,
+				096EA0FC1AF3B43F008A06F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096EA0FD1AF3B43F008A06F4 /* Build configuration list for PBXNativeTarget "TV WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096EA0FE1AF3B43F008A06F4 /* Debug */,
+				096EA0FF1AF3B43F008A06F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

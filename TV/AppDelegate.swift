@@ -16,6 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+
         return true
     }
 
@@ -41,6 +42,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        
+//        let filePath = NSBundle.mainBundle().pathForResource("sample", ofType: "json")
+//        
+//        println("parsing")
+//        if let content = parse(filePath!) {
+//            var result = [TVProgram]()
+//            println("filtering")
+//            for (channel, programs) in content {
+//                let prog = programNow(programs)
+//                result.append(prog)
+//            }
+//            println("Filling data")
+//            reply(["result":result])
+//        }
+//        else {
+//            println("error")
+//            reply(["error":"error"])
+//        }
+        
+    }
 
 }
 
