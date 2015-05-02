@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0969B0441AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
+		0969B0451AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
+		0969B0461AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
 		096EA0BC1AF3B3F8008A06F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA0BB1AF3B3F8008A06F4 /* AppDelegate.swift */; };
 		096EA0BE1AF3B3F8008A06F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096EA0BD1AF3B3F8008A06F4 /* ViewController.swift */; };
 		096EA0C11AF3B3F8008A06F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096EA0BF1AF3B3F8008A06F4 /* Main.storyboard */; };
@@ -23,9 +26,6 @@
 		098C0C9A1AF3C07600DB4D5B /* TVProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C991AF3C07600DB4D5B /* TVProgram.swift */; };
 		098C0C9B1AF3C0B000DB4D5B /* TVProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C991AF3C07600DB4D5B /* TVProgram.swift */; };
 		098C0C9D1AF3C1A600DB4D5B /* TVProgramRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 098C0C9C1AF3C1A600DB4D5B /* TVProgramRow.swift */; };
-		09EBF39E1AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
-		09EBF39F1AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
-		09EBF3A01AF3D32B0048E99B /* sample.json in Resources */ = {isa = PBXBuildFile; fileRef = 09EBF39D1AF3D32B0048E99B /* sample.json */; };
 		09EBF3A21AF3D3460048E99B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A11AF3D3460048E99B /* JSONParser.swift */; };
 		09EBF3A31AF3D3460048E99B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A11AF3D3460048E99B /* JSONParser.swift */; };
 		09EBF3AE1AF3D7CC0048E99B /* Duration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EBF3A81AF3D7CC0048E99B /* Duration.swift */; };
@@ -81,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0969B0431AF5339C00779E84 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		096EA0B61AF3B3F8008A06F4 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096EA0BA1AF3B3F8008A06F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096EA0BB1AF3B3F8008A06F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		096EA0F51AF3B43F008A06F4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		098C0C991AF3C07600DB4D5B /* TVProgram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProgram.swift; sourceTree = "<group>"; };
 		098C0C9C1AF3C1A600DB4D5B /* TVProgramRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVProgramRow.swift; sourceTree = "<group>"; };
-		09EBF39D1AF3D32B0048E99B /* sample.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sample.json; sourceTree = SOURCE_ROOT; };
 		09EBF3A11AF3D3460048E99B /* JSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONParser.swift; path = "TV WatchKit Extension/JSONParser.swift"; sourceTree = SOURCE_ROOT; };
 		09EBF3A81AF3D7CC0048E99B /* Duration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duration.swift; sourceTree = "<group>"; };
 		09EBF3A91AF3D7CC0048E99B /* Int+Timepiece.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Timepiece.swift"; sourceTree = "<group>"; };
@@ -163,10 +163,10 @@
 			isa = PBXGroup;
 			children = (
 				09EBF3A71AF3D7BA0048E99B /* Utils */,
-				09EBF39D1AF3D32B0048E99B /* sample.json */,
 				09EBF3A11AF3D3460048E99B /* JSONParser.swift */,
 				096EA0BB1AF3B3F8008A06F4 /* AppDelegate.swift */,
 				098C0C991AF3C07600DB4D5B /* TVProgram.swift */,
+				0969B0431AF5339C00779E84 /* test.json */,
 				096EA0BD1AF3B3F8008A06F4 /* ViewController.swift */,
 				096EA0BF1AF3B3F8008A06F4 /* Main.storyboard */,
 				096EA0C21AF3B3F8008A06F4 /* Images.xcassets */,
@@ -379,7 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096EA0C11AF3B3F8008A06F4 /* Main.storyboard in Resources */,
-				09EBF39E1AF3D32B0048E99B /* sample.json in Resources */,
+				0969B0441AF5339C00779E84 /* test.json in Resources */,
 				096EA0C61AF3B3F8008A06F4 /* LaunchScreen.xib in Resources */,
 				096EA0C31AF3B3F8008A06F4 /* Images.xcassets in Resources */,
 			);
@@ -398,7 +398,7 @@
 			files = (
 				096EA0EC1AF3B43F008A06F4 /* TV WatchKit App.app in Resources */,
 				096EA0E81AF3B43F008A06F4 /* Images.xcassets in Resources */,
-				09EBF39F1AF3D32B0048E99B /* sample.json in Resources */,
+				0969B0451AF5339C00779E84 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +408,7 @@
 			files = (
 				096EA0F41AF3B43F008A06F4 /* Interface.storyboard in Resources */,
 				096EA0F61AF3B43F008A06F4 /* Images.xcassets in Resources */,
-				09EBF3A01AF3D32B0048E99B /* sample.json in Resources */,
+				0969B0461AF5339C00779E84 /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

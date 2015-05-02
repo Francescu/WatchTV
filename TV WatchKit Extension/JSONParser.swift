@@ -9,7 +9,7 @@
 import Foundation
 
 typealias JSONContentType = Dictionary<String,Array<Dictionary<String,String>>>
-typealias FormatedContentType = Dictionary<TVChannel,Array<TVProgram>>
+typealias FormatedContentType = Dictionary<String,Array<TVProgram>>
 
 func parse (path:String) -> FormatedContentType? {
     
@@ -28,13 +28,13 @@ func parse (path:String) -> FormatedContentType? {
             
             for (channelString, content) in obj {
                 if let channel = TVChannel(rawValue: channelString) {
-                    res[channel] = [TVProgram]()
+                    res[channel.rawValue] = [TVProgram]()
                     for programJSON in content {
                         if let name = programJSON["name"],
                             let beginAtString = programJSON["beginAt"] {
                                 let comp = split(beginAtString) { $0 == ":" }
                                 let beginAt = now.change(year: nil, month: nil, day: nil, hour: (comp[0] as NSString).integerValue, minute:(comp[1] as NSString).integerValue, second: Int(arc4random_uniform(60)))
-                                res[channel]?.append(TVProgram(channel: channel, beginAt: beginAt, name: name, content: nil))
+                                res[channel.rawValue]?.append(TVProgram(channel: channel.rawValue, beginAt: beginAt, endAt:nil, name: name, content: nil))
                         }
                     }
                 }

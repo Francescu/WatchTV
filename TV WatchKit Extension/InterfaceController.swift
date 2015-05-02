@@ -20,31 +20,29 @@ let favoritesChan:[TVChannel] = [ .TF1, .France2, .France3 , .CanalPlus , .Franc
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var table: WKInterfaceTable!
+    var state = DataState.NotYet
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-        
-        // Configure interface objects here.
-        let filePath = NSBundle.mainBundle().pathForResource("sample", ofType: "json")
-        
-        if let content = parse(filePath!) {
-            var result = [TVProgram]()
-            for channel in favoritesChan {
-                if let programs = content[channel] {
-                    let prog = programNow(programs)
-                    result.append(prog)
-                }
-            }
-            self.fillData(result)
-        }
     }
-
+    
+    func formatAndFill(data:FormatedContentType) {
+        var result = [TVProgram]()
+        for channel in favoritesChan {
+            if let programs = data[channel.rawValue] {
+                let prog = programNow(programs)
+                result.append(prog)
+            }
+        }
+        self.fillData(result)
+    }
+    
     func fillData(content:[TVProgram]) {
        self.table.setNumberOfRows(content.count, withRowType: RowType.Program)
         for index in 0..<content.count {
             let program = content[index]
             if let row = self.table.rowControllerAtIndex(index) as? TVProgramRow {
-                row.logo.setImageNamed(program.channel.imageName())
+                row.logo.setImageNamed(TVChannel(rawValue:program.channel)!.imageName())
                 row.beginTimer.setDate(program.beginAt)
                 row.beginTimer.start()
                 row.programName.setText(program.name)
@@ -54,7 +52,21 @@ class InterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        if let data = self.state.data() {
+           self.formatAndFill(data)
+        } else {
+            WKInterfaceController.openParentApplication([NSObject:AnyObject](), reply: { (result, error) -> Void in
+                if let d = result?["result"] as? NSData {
+                    if let r = NSKeyedUnarchiver.unarchiveObjectWithData(d) as? FormatedContentType {
+                    self.formatAndFill(r)
+                    }
+                }
+            })
+        }
     }
+    
+    
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible

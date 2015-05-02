@@ -9,14 +9,24 @@
 import UIKit
 
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
 
+    var state = DataState.NotYet
+
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
 
+        
+//        self.application(UIApplication.sharedApplication(), handleWatchKitExtensionRequest:nil ) { (result) -> Void in
+//            if let r = result?["result"] as? FormatedContentType {
+//               println(r)
+//            }
+//        }
+//        
         return true
     }
 
@@ -43,24 +53,56 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
-        
-//        let filePath = NSBundle.mainBundle().pathForResource("sample", ofType: "json")
+//        var workaround:UIBackgroundTaskIdentifier?
 //        
-//        println("parsing")
-//        if let content = parse(filePath!) {
-//            var result = [TVProgram]()
-//            println("filtering")
-//            for (channel, programs) in content {
-//                let prog = programNow(programs)
-//                result.append(prog)
-//            }
-//            println("Filling data")
-//            reply(["result":result])
+//        workaround = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
+//            UIApplication.sharedApplication().endBackgroundTask(workaround!)
+//        })
+//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), {
+//            UIApplication.sharedApplication().endBackgroundTask(workaround!)
+//        })
+//        var bgTask:UIBackgroundTaskIdentifier?
+//        bgTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {
+//            reply(nil)
+//            UIApplication.sharedApplication().endBackgroundTask(bgTask!)
 //        }
-//        else {
-//            println("error")
-//            reply(["error":"error"])
-//        }
+        //1. If we have data just send it
+        if let data = self.state.data() {
+            println("Send data");
+            reply(["result": data])
+        } else {
+            //GET DATA (from remote or from local)
+            println("parsing")
+            
+            
+            
+            let filePath = NSBundle.mainBundle().pathForResource("test", ofType: "json")
+            
+            if let content = parse(filePath!) {
+                //                var result = [TVProgram]()
+                println("filtering")
+                //                for (channel, programs) in content {
+                //                    let prog = programNow(programs)
+                //                    result.append(prog)
+                //                }
+                println("Filling data")
+//                if let test = content["tf1"] {
+//                    NSKeyedArchiver.archivedDataWithRootObject(test)
+//                }
+//
+                reply(["result":NSKeyedArchiver.archivedDataWithRootObject(content)])
+            }
+            else {
+                println("error")
+                reply(["error":"error"])
+            }
+        }
+//            UIApplication.sharedApplication().endBackgroundTask(bgTask!)
+        
+        
+        //
+//
+//
         
     }
 
