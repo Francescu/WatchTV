@@ -59,7 +59,8 @@ class InterfaceController: WKInterfaceController {
             WKInterfaceController.openParentApplication([NSObject:AnyObject](), reply: { (result, error) -> Void in
                 if let d = result?["result"] as? NSData {
                     if let r = NSKeyedUnarchiver.unarchiveObjectWithData(d) as? FormatedContentType {
-                    self.formatAndFill(r)
+                        self.state = DataState.Data(r, DataState.dateString())
+                        self.formatAndFill(r)
                     }
                 }
             })

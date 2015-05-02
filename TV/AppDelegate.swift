@@ -53,20 +53,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
-//        var workaround:UIBackgroundTaskIdentifier?
-//        
-//        workaround = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
-//            UIApplication.sharedApplication().endBackgroundTask(workaround!)
-//        })
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), {
-//            UIApplication.sharedApplication().endBackgroundTask(workaround!)
-//        })
-//        var bgTask:UIBackgroundTaskIdentifier?
-//        bgTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler() {
-//            reply(nil)
-//            UIApplication.sharedApplication().endBackgroundTask(bgTask!)
-//        }
-        //1. If we have data just send it
+
         if let data = self.state.data() {
             println("Send data");
             reply(["result": data])
@@ -79,17 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let filePath = NSBundle.mainBundle().pathForResource("test", ofType: "json")
             
             if let content = parse(filePath!) {
-                //                var result = [TVProgram]()
-                println("filtering")
-                //                for (channel, programs) in content {
-                //                    let prog = programNow(programs)
-                //                    result.append(prog)
-                //                }
-                println("Filling data")
-//                if let test = content["tf1"] {
-//                    NSKeyedArchiver.archivedDataWithRootObject(test)
-//                }
-//
+                self.state = DataState.Data(content, DataState.dateString())
                 reply(["result":NSKeyedArchiver.archivedDataWithRootObject(content)])
             }
             else {
@@ -97,13 +74,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 reply(["error":"error"])
             }
         }
-//            UIApplication.sharedApplication().endBackgroundTask(bgTask!)
-        
-        
-        //
-//
-//
-        
     }
 
 }
