@@ -80,6 +80,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //GET DATA (from remote or from local)
             println("parsing")
             
+            var task = UIBackgroundTaskInvalid
+            UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler({ () -> Void in
+                UIApplication.sharedApplication().endBackgroundTask(task)
+                task = UIBackgroundTaskInvalid
+            })
+            
             if let data = getJSONData() {
                 if let content = parse(data) {
                     self.state = DataState.Data(content, DataState.dateString())
@@ -93,6 +99,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else {
                 reply(["error":"No network or server down"])
             }
+            UIApplication.sharedApplication().endBackgroundTask(task)
+            
+            task = UIBackgroundTaskInvalid
         }
     }
 
