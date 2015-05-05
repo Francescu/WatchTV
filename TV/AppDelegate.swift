@@ -8,8 +8,29 @@
 
 import UIKit
 
-@UIApplicationMain
+func localFilePath() -> String {
+    return NSTemporaryDirectory().stringByAppendingPathComponent("\(DataState.dateString()).json")
+}
 
+
+func getJSONData() -> NSData? {
+    if let data = NSData(contentsOfFile: localFilePath()) {
+        return data
+    }
+    else {
+        let request = NSURLRequest(URL: Config.JSONURL, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10)
+        var response:NSURLResponse?
+        var error:NSError?
+        
+        if let data = NSURLConnection.sendSynchronousRequest(request, returningResponse:&response, error: &error) {
+           data.writeToFile(localFilePath(), atomically: true)
+           return data
+        }
+    }
+    return nil
+}
+
+@UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -22,11 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         
 //        self.application(UIApplication.sharedApplication(), handleWatchKitExtensionRequest:nil ) { (result) -> Void in
-//            if let r = result?["result"] as? FormatedContentType {
-//               println(r)
-//            }
+//               println(result)
 //        }
-//        
+//
         return true
     }
 
@@ -61,17 +80,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             //GET DATA (from remote or from local)
             println("parsing")
             
-            
-            
-            let filePath = NSBundle.mainBundle().pathForResource("test", ofType: "json")
-            
-            if let content = parse(filePath!) {
-                self.state = DataState.Data(content, DataState.dateString())
-                reply(["result":NSKeyedArchiver.archivedDataWithRootObject(content)])
+            if let data = getJSONData() {
+                if let content = parse(data) {
+                    self.state = DataState.Data(content, DataState.dateString())
+                    reply(["result":NSKeyedArchiver.archivedDataWithRootObject(content)])
+                }
+                else {
+                    println("error")
+                    reply(["error":"error"])
+                }
             }
             else {
-                println("error")
-                reply(["error":"error"])
+                reply(["error":"No network or server down"])
             }
         }
     }
