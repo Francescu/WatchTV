@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Realm
 
 func localFilePath() -> String {
     return NSTemporaryDirectory().stringByAppendingPathComponent("\(DataState.dateString()).json")

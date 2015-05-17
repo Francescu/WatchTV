@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0904A3561B092197006B06A6 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0904A3551B092197006B06A6 /* RealmSwift.framework */; };
 		0969B0441AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
 		0969B0451AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
 		0969B0461AF5339C00779E84 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0969B0431AF5339C00779E84 /* test.json */; };
@@ -83,6 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0904A3551B092197006B06A6 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		0969B0431AF5339C00779E84 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		0969B0471AF5432500779E84 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../../Config.swift; sourceTree = "<group>"; };
 		096EA0B61AF3B3F8008A06F4 /* TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0904A3561B092197006B06A6 /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +144,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0904A3581B09229B006B06A6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
 		096EA0AD1AF3B3F8008A06F4 = {
 			isa = PBXGroup;
 			children = (
+				0904A3581B09229B006B06A6 /* Common */,
+				0904A3551B092197006B06A6 /* RealmSwift.framework */,
 				096EA0B81AF3B3F8008A06F4 /* TV */,
 				096EA0CE1AF3B3F8008A06F4 /* TVTests */,
 				096EA0E01AF3B43F008A06F4 /* TV WatchKit Extension */,
@@ -269,6 +281,7 @@
 				096EA0B31AF3B3F8008A06F4 /* Frameworks */,
 				096EA0B41AF3B3F8008A06F4 /* Resources */,
 				096EA1001AF3B43F008A06F4 /* Embed App Extensions */,
+				0904A3571B0921A8006B06A6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -424,6 +437,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0904A3571B0921A8006B06A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		096EA0B21AF3B3F8008A06F4 /* Sources */ = {
@@ -610,6 +640,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -628,6 +659,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
