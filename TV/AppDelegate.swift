@@ -19,7 +19,7 @@ func getJSONData() -> NSData? {
         return data
     }
     else {
-        let request = NSURLRequest(URL: Config.JSONURL, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10)
+        let request = NSURLRequest(URL: PrivateConfig.JSONURL, cachePolicy: NSURLRequestCachePolicy.ReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10)
         var response:NSURLResponse?
         var error:NSError?
         
@@ -41,12 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-
+        RLMRealm.setDefaultRealmPath(App.Path.Realm)
         
-//        self.application(UIApplication.sharedApplication(), handleWatchKitExtensionRequest:nil ) { (result) -> Void in
-//               println(result)
-//        }
-//
         return true
     }
 

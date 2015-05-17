@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Timepiece
+
 extension NSDate
 {
     func isAfter(dateToCompare : NSDate) -> Bool
