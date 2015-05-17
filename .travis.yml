@@ -1,0 +1,11 @@
+osx_image: xcode63
+language: objective-c
+xcode_project: TV.xcodeproj
+before_install: true
+install:
+  - brew update
+  - brew upgrade xctool
+  - brew install carthage
+  - carthage bootstrap --verbose
+xcode_scheme: TV
+#xcode_sdk: iphonesimulator8.3
