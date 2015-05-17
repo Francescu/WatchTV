@@ -1,8 +1,8 @@
-osx_image: xcode63
+# osx_image: xcode63
 language: objective-c
 xcode_project: TV.xcodeproj
-before_install: true
-install:
+before_install:
+# install:
   - brew update
   - brew upgrade xctool
   - brew install carthage
